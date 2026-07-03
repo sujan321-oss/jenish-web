@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Raindadevi Chhara Veterinary</title>
+  <meta name="description" content="Veterinary services offered in Raindadevi Chhara, Palpa: clinical care, vaccination, surgery, farm visits and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="scene" class="scene-canvas" aria-hidden="true"></canvas>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">V</div>
+        <div>
+          <p>Veterinary Expert</p>
+          <strong>Raindadevi Chhara, Palpa</strong>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero reveal">
+        <p class="eyebrow">What we offer</p>
+        <h1>Complete veterinary services for pets and livestock</h1>
+        <p>From routine wellness checks to emergency care and on-farm visits, every service is delivered with clinical expertise and genuine compassion.</p>
+      </section>
+
+      <section class="section reveal">
+        <div class="services-grid">
+          <div class="service-card" data-tilt>
+            <div class="card-icon">🩺</div>
+            <h3>Clinical Examination</h3>
+            <p>Thorough health checkups and accurate diagnosis for cattle, pets, and farm animals.</p>
+          </div>
+          <div class="service-card" data-tilt>
+            <div class="card-icon">💉</div>
+            <h3>Vaccination</h3>
+            <p>Preventive vaccination programs to protect animals against common regional diseases.</p>
+          </div>
+          <div class="service-card" data-tilt>
+            <div class="card-icon">🐄</div>
+            <h3>Livestock Care</h3>
+            <p>Dedicated support for dairy cattle, goats, and buffalo including nutrition guidance.</p>
+          </div>
+          <div class="service-card" data-tilt>
+            <div class="card-icon">🔬</div>
+            <h3>Diagnostics</h3>
+            <p>Medical diagnosis and treatment planning backed by careful clinical assessment.</p>
+          </div>
+          <div class="service-card" data-tilt>
+            <div class="card-icon">🚑</div>
+            <h3>Emergency Support</h3>
+            <p>Prompt assistance for urgent animal health situations across the local region.</p>
+          </div>
+          <div class="service-card" data-tilt>
+            <div class="card-icon">🏡</div>
+            <h3>Farm Visits</h3>
+            <p>On-site veterinary care so livestock owners get help right where they need it.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-band reveal">
+        <div class="cta-inner" data-tilt>
+          <h2>Need a specific service?</h2>
+          <p>Reach out to discuss your animal's needs and schedule a visit.</p>
+          <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>Designed for a dedicated veterinary professional in Raindadevi Chhara, Palpa.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="three-scene.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
