@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Raindadevi Chhara Veterinary</title>
+  <meta name="description" content="A look at the animals cared for in Raindadevi Chhara, Palpa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="scene" class="scene-canvas" aria-hidden="true"></canvas>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">V</div>
+        <div>
+          <p>Veterinary Expert</p>
+          <strong>Raindadevi Chhara, Palpa</strong>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero reveal">
+        <p class="eyebrow">Moments of care</p>
+        <h1>Gallery</h1>
+        <p>A glimpse of the pets and livestock cared for across Raindadevi Chhara and the wider Palpa region.</p>
+      </section>
+
+      <section class="section reveal">
+        <div class="gallery-grid">
+          <figure class="gallery-item" data-tilt>
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600&q=80&auto=format&fit=crop" alt="Dog" loading="lazy" />
+            <figcaption>Companion animals</figcaption>
+          </figure>
+          <figure class="gallery-item" data-tilt>
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&q=80&auto=format&fit=crop" alt="Cat" loading="lazy" />
+            <figcaption>Feline wellness</figcaption>
+          </figure>
+          <figure class="gallery-item" data-tilt>
+            <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?w=600&q=80&auto=format&fit=crop" alt="Cow" loading="lazy" />
+            <figcaption>Dairy cattle care</figcaption>
+          </figure>
+          <figure class="gallery-item" data-tilt>
+            <img src="https://images.unsplash.com/photo-1524024973431-2ad916746881?w=600&q=80&auto=format&fit=crop" alt="Goat" loading="lazy" />
+            <figcaption>Goat health checks</figcaption>
+          </figure>
+          <figure class="gallery-item" data-tilt>
+            <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&q=80&auto=format&fit=crop" alt="Horse" loading="lazy" />
+            <figcaption>Equine support</figcaption>
+          </figure>
+          <figure class="gallery-item" data-tilt>
+            <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=600&q=80&auto=format&fit=crop" alt="Poultry" loading="lazy" />
+            <figcaption>Poultry & farm animals</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section cta-band reveal">
+        <div class="cta-inner" data-tilt>
+          <h2>Your animal could be next</h2>
+          <p>Bring your pet or livestock in for compassionate, expert care.</p>
+          <a class="btn btn-primary" href="contact.html">Book a Visit</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>Designed for a dedicated veterinary professional in Raindadevi Chhara, Palpa.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="three-scene.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

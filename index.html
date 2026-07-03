@@ -4,26 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Veterinary Portfolio | Raindadevi Chhara</title>
+  <meta name="description" content="Compassionate veterinary care in Raindadevi Chhara, Palpa with 10 years of experience." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <canvas id="scene" class="scene-canvas" aria-hidden="true"></canvas>
   <div class="page-shell">
     <header class="topbar">
-      <div class="brand">
+      <a class="brand" href="index.html">
         <div class="brand-mark">V</div>
         <div>
           <p>Veterinary Expert</p>
           <strong>Raindadevi Chhara, Palpa</strong>
         </div>
-      </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
@@ -36,28 +42,29 @@
             Skilled veterinary professional serving Raindadevi Chhara and surrounding communities with compassionate medical care, clinical expertise, and dependable support for livestock and pets.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Book a Consultation</a>
-            <a class="btn btn-secondary" href="#education">Learn More</a>
+            <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+            <a class="btn btn-secondary" href="services.html">Explore Services</a>
           </div>
           <div class="hero-stats">
             <div>
-              <strong>10+</strong>
+              <strong data-count="10" data-suffix="+">0</strong>
               <span>Years of experience</span>
             </div>
             <div>
-              <strong>SMSS</strong>
-              <span>10th completed</span>
+              <strong data-count="500" data-suffix="+">0</strong>
+              <span>Animals treated</span>
             </div>
             <div>
-              <strong>JVT Tansen</strong>
-              <span>11-12 English medium</span>
+              <strong data-count="24" data-suffix="/7">0</strong>
+              <span>Emergency support</span>
             </div>
           </div>
         </div>
         <div class="hero-visual reveal delay-1">
-          <div class="hero-photo-frame">
+          <div class="hero-photo-frame float-slow" data-tilt>
             <img src="https://scontent.fpnq4-1.fna.fbcdn.net/v/t39.30808-6/490629548_9322146427897137_8861804985270337102_n.jpg?stp=dst-jpg_tt6&cstp=mx1765x2048&ctp=s1765x2048&_nc_cat=100&ccb=1-7&_nc_sid=833d8&_nc_ohc=2bDwKVphxJcQ7kNvwFAFBUx&_nc_oc=AdqU8LZSOTi8PKAgrdV1gZw8GuHFJPierSuCOOzSLHqGBE4_qX8NzmfB0sBP-WHBIJk&_nc_zt=23&_nc_ht=scontent.fpnq4-1.fna&_nc_gid=fBxDAvKNsTNU113MlGoCPg&_nc_ss=7b2a8&oh=00_AQB1XZPCppTfCQpl9jQURSUqp7Ayr-S9TSHGXIQKdoln3w&oe=6A4D7FAC" alt="Veterinarian portrait" />
           </div>
+          <div class="hero-badge float-fast">🐾 Compassionate Care</div>
         </div>
       </section>
 
@@ -67,13 +74,13 @@
           <h2>Serving animals and families with trusted veterinary care</h2>
         </div>
         <div class="section-grid">
-          <div class="card">
+          <div class="card" data-tilt>
             <h3>Personal mission</h3>
             <p>
               Committed to improving animal health through preventive medicine, diagnostics, and compassionate treatment for cattle, small animals, and farm livestock.
             </p>
           </div>
-          <div class="card">
+          <div class="card" data-tilt>
             <h3>Core strengths</h3>
             <ul>
               <li>Clinical veterinary medicine</li>
@@ -91,15 +98,18 @@
           <h2>10 years of veterinary and medical practice</h2>
         </div>
         <div class="experience-grid">
-          <article class="experience-card">
+          <article class="experience-card" data-tilt>
+            <div class="card-icon">🩺</div>
             <h3>Veterinary Care</h3>
             <p>Delivering diagnosis, treatment, and medical support for livestock, pets, and farm animals in the Raindadevi Chhara region.</p>
           </article>
-          <article class="experience-card">
+          <article class="experience-card" data-tilt>
+            <div class="card-icon">💉</div>
             <h3>Medical Services</h3>
             <p>Experienced in clinical medical care for animal health, disease prevention, and emergency support for local families.</p>
           </article>
-          <article class="experience-card">
+          <article class="experience-card" data-tilt>
+            <div class="card-icon">🌱</div>
             <h3>Community Impact</h3>
             <p>Helping cattle owners and pet guardians through education, vaccination campaigns, and accessible veterinary guidance.</p>
           </article>
@@ -127,34 +137,29 @@
         </div>
       </section>
 
-      <section id="contact" class="section contact reveal">
-        <div class="section-title">
-          <span>Contact</span>
-          <h2>Ready to support your animals</h2>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Location</h3>
-            <p>Raindadevi Chhara, Palpa, Nepal</p>
-          </div>
-          <div class="contact-card">
-            <h3>Availability</h3>
-            <p>Open for appointments and urgent assistance across the local region.</p>
-          </div>
-          <div class="contact-card">
-            <h3>Connect</h3>
-            <p>Email: info@example.com</p>
-            <p>Phone: +977 9857028756</p>
-          </div>
+      <section class="section cta-band reveal">
+        <div class="cta-inner" data-tilt>
+          <h2>Ready to support your animals?</h2>
+          <p>Book a consultation or reach out for urgent veterinary assistance across the Palpa region.</p>
+          <a class="btn btn-primary" href="contact.html">Get in Touch</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
       <p>Designed for a dedicated veterinary professional in Raindadevi Chhara, Palpa.</p>
     </footer>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="three-scene.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
